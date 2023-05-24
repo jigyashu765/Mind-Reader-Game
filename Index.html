@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-item">
+            <h1>Mind Reader Application</h1>
+            <p class = "title" id="Instruction"></p>
+            <input type="text" id="Input" placeholder="Enter any Number..." autofocus>
+            <button id="NextBtn" onclick="NextBtn()">Next &#8658</button>
+        </div>
+        <div class="alert-box" id="alert-box" style="display: none;">
+            <div class="alert-box-item">
+                <h2 id="Input-value"></h2>
+                <div class="btn">
+                    <button id="wrongBtn" onclick="wrongBtn()">Wrong &#x2717</button>
+                    <button id="correctBtn" onclick="correctBtn()">Correct &#x2713</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
